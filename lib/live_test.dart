@@ -42,7 +42,6 @@ Map<String, double> calculateAverageScores(List<Map<String, dynamic>> students) 
     averageScores[name] = double.parse(average.toStringAsFixed(2));
   }
 
-  // Sort the map by values (average scores) in descending order
   var sortedEntries = averageScores.entries.toList()
     ..sort((a, b) => b.value.compareTo(a.value));
 
